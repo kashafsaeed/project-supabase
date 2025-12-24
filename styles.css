@@ -33,18 +33,18 @@ body {
   background-attachment: fixed;
   background-size: cover;
   &:nth-child(1){
-    background-image:url("images/charlotte-cowell-XrGBjocIOWc-unsplash.jpg");
+    background-image:url("images/jazmin-quaynor-FoeIOgztCXo-unsplash.jpg");
   background-position: center;
   } 
   &:nth-child(2){
-    background-image:url("https://images.unsplash.com/photo-1592194996308-7b43878e84a6?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjQ3Njc3OTB8&ixlib=rb-4.1.0&q=85");
+    background-image:url("images/pexels-settlemania-16940629.jpg");
   background-position: center;
   }
    &:nth-child(3){
-    background-image:url("https://images.unsplash.com/photo-1535745023281-627f021e68b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjQ3Njc5MjJ8&ixlib=rb-4.1.0&q=85");
-  }
+    background-image:url("images/sara-kurfess-5epnzwsphl0-unsplash.jpg");
+  background-position: center;}
 	 &:nth-child(4){
-    background-image:url("https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjQ3OTQ3MDR8&ixlib=rb-4.1.0&q=85");
+    background-image:url("images/diana-light-nvQemFKRBUo-unsplash.jpg");
   background-position: center;
   }
 	
