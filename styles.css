@@ -1,0 +1,75 @@
+body {
+  --trans-duration: 750ms;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2px;
+  margin: 0;
+  height: 100svh;
+  overflow: hidden;
+  font-family: sans-serif;
+  line-height: 1.4;
+  transition: grid-template-columns var(--trans-duration) linear(0, 0.287 15.7%, 0.441 23.2%, 0.999 44.7%, 0.854 52.3%, 0.82 55.7%, 0.81 59%, 0.818 61.9%, 0.844 65.1%, 0.999 77.4%, 0.974 81.1%, 0.966 84.7%, 0.996 95.4%, 1);
+  &:has(>:nth-child(1):hover){
+    grid-template-columns: 10fr 1fr 1fr 1fr;
+  }
+  &:has(>:nth-child(2):hover){
+    grid-template-columns: 1fr 10fr 1fr 1fr;
+  }
+  &:has(>:nth-child(3):hover){
+    grid-template-columns: 1fr 1fr 10fr 1fr;
+  }
+  &:has(>:nth-child(4):hover){
+    grid-template-columns: 1fr 1fr 1fr 10fr;
+  }
+}
+
+.card {
+  display: grid;
+  /*grid-template: 1fr / 1fr;*/
+  margin: 0;
+  height: 100%;
+  border-image: fill 0 linear-gradient(in oklch,transparent 70%, black);
+  
+  background-attachment: fixed;
+  background-size: cover;
+  &:nth-child(1){
+    background-image:url("images/charlotte-cowell-XrGBjocIOWc-unsplash.jpg");
+  background-position: center;
+  } 
+  &:nth-child(2){
+    background-image:url("https://images.unsplash.com/photo-1592194996308-7b43878e84a6?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjQ3Njc3OTB8&ixlib=rb-4.1.0&q=85");
+  background-position: center;
+  }
+   &:nth-child(3){
+    background-image:url("https://images.unsplash.com/photo-1535745023281-627f021e68b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjQ3Njc5MjJ8&ixlib=rb-4.1.0&q=85");
+  }
+	 &:nth-child(4){
+    background-image:url("https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjQ3OTQ3MDR8&ixlib=rb-4.1.0&q=85");
+  background-position: center;
+  }
+	
+  & > * {
+    grid-area: 1 / 1;
+  }
+  img {
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  p { 
+    translate: 0 100vh;
+    overflow: hidden;
+    color: white;
+    padding: 1rem;
+    align-self: end;
+    text-wrap: balance;
+    
+    transition: translate 300ms ease-in-out;    
+  }
+  &:hover > p{
+     transition-delay: var(--trans-duration);
+     translate: 0;
+    }
+  }
+
