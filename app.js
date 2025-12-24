@@ -1,8 +1,9 @@
-const navs = document.getElementById(navlinks);
-const menuBtn = document.getElementById('menu-btn');
+ import supabase from './config.js';
+ 
+ 
+ const menuBtn = document.getElementById('menuBtn');
+ const navLinks = document.getElementById('navLinks');
 
-
-menuBtn.addEventListener('click', () => {
+    menuBtn.addEventListener('click', () => {
       navLinks.classList.toggle('active');
     });
-
