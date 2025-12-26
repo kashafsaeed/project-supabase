@@ -1,7 +1,7 @@
-import { supabase } from './config.js';
+import supabase  from './config.js';
 
-// const fileInput = document.getElementById('fileInput');
-// const uploadbtn = document.getElementById('uploadbtn');
+const fileInput = document.getElementById('fileInput');
+const uploadbtn = document.getElementById('uploadbtn');
 // const main = document.getElementById('main');
 // let fileUrl;
 
@@ -116,31 +116,4 @@ import { supabase } from './config.js';
 // uploadbtn.addEventListener('click', btn);
 
 
-
-
-uploadBtn.onclick = async () => {
-  const file = img.files[0];
-  if (!file) return alert("Select image");
-
-  const name = Date.now() + file.name;
-
-  const { data } = await supabase
-    .storage.from("images")
-    .upload(name, file);
-
-  const { data:url } = supabase
-    .storage.from("images")
-    .getPublicUrl(data.path);
-
-  await supabase.from("pics").insert({ imageUrl: url.publicUrl });
-  loadPics();
-};
-
-async function loadPics() {
-  main.innerHTML = "";
-  const { data } = await supabase.from("pics").select("imageUrl");
-  data.forEach(p => main.innerHTML += `<img src="${p.imageUrl}" width="150">`);
-}
-
-loadPics();
 
