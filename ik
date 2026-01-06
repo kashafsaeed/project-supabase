@@ -1,8 +1,8 @@
-import supabase  from './config.js';
+// import  supabase from './config.js';
 
-const fileInput = document.getElementById('fileInput');
-const uploadbtn = document.getElementById('uploadbtn');
-// const main = document.getElementById('main');
+// const fileInput = document.getElementById('fileInput');
+// const uploadbtn = document.getElementById('uploadbtn');
+// const maindiv = document.getElementById('main');
 // let fileUrl;
 
 // async function btn (e) {
@@ -18,39 +18,12 @@ const uploadbtn = document.getElementById('uploadbtn');
 //    if (data) {
 //       fileUrl = data.path
 
-//     //     console.log('File uploaded successfully:', fileUrl);   
-//     // }
-//     // if (error) {
-//     //     console.error('Error uploading file:', error.message);
-//     // }
-
-//    const { data:urlData } = supabase
-//    .storage
-//    .from('uploadimage')
-//    .getPublicUrl(fileUrl)
-
-//   if (urlData) {
-//     console.log('Public URL:', urlData);
-//     console.log('public url:', urlData.publicUrl);
-//     const { error } = await supabase
-//     .from('images')
-//     .insert([{ image_url: urlData.publicUrl }]);
-
-//   }
-//   if (error) {
-//     console.error('Error inserting URL into database:', error.message);
-//   }else {
-//     console.log('Image URL inserted into database successfully');
-//   }
-
-
-  
+//         console.log('File uploaded successfully:', fileUrl);   
+//     }
+//     if (error) {
+//         console.error('Error uploading file:', error.message);
+//     }
 // }
-// else { 
-//      console.error('Error uploading file:', error);
-// }
-// }
-
 
 // uploadbtn.addEventListener('click', btn);
 
